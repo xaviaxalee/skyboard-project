@@ -5,15 +5,113 @@
     box-sizing: border-box;
 }
 
-/* nav bar */
-a.nav-link:hover {
-    color:#BD3193;
-    font-weight: 800;
-}
-a.nav-link:active {
-    color:#BD3193;
-    font-weight: 800;
-}
+
+	/*start of testimonials*/
+	.testimonialsbg{
+		/*border: 1px solid black;*/
+		height: 700px;
+		width: 1350px;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #FFFFFF;
+		float: left;
+	}
+	.testimonials{
+		/*border: 1px solid black;*/
+		height: 500px;
+		width: 900px;
+		gap: 72px;
+		display: inline-flex;
+		flex-direction: column;
+	}
+	.clients{
+		/*border: 1px solid black;*/
+		height: 90px;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		font-family: quantico;
+		font-weight: 700;
+		font-size: 30px;
+	}
+	.feedback{
+		color: #BD3193;
+		font-family: quantico;
+		font-weight: 700;
+		font-size: 35px;
+	}
+	.testi-content{
+		/*border: 1px solid black;*/
+		height: 300px;
+		width: 100%;
+		display: inline-flex;
+		flex-direction: row;
+	}
+	.testi-box{
+		/*border: 1px solid yellow;*/
+		height: 300px;
+		width: 50%;
+		float: left;
+	}
+	.sliderbutton{
+		/*border: 1px solid black;*/
+		height: 100%;
+		width: 10%;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		float: left;
+	}
+	.slider{
+		width: 40px;
+		height: 40px;
+	}
+	.quote{
+		/*border: 1px solid black;*/
+		height: 20%;
+		width: 80%;
+		float: left;
+	}
+	.testi-text{
+		/*border: 1px solid black;*/
+		height: 80%;
+		width: 90%;
+		float: left;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		font-family: poppins;
+		font-weight: 400;
+		font-size: 13px;
+		color: grey;
+	}
+	.testi2{
+		/*border: 1px solid black;*/
+		height: 100%;
+		width: 90%;
+		float: left;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		font-family: poppins;
+		font-weight: 400;
+		font-size: 13px;
+		color: grey;
+	}
+	.testi-image{
+		/*border: 1px solid yellow;*/
+		height: 300px;
+		width: 50%;
+		float: left;
+	}
+	.testimonial-img{
+		width: 260px;
+		height: 240px;
+	}
+
+/* nav bar start */
 .navbar-nav{
     color: #FFF;
     font-family: Poppins;
@@ -21,11 +119,11 @@ a.nav-link:active {
     font-style: normal;
     font-weight: 200;
 }
-.navbar-brand{
-    width: 5%;
+.navbar-brand .logo{
+    width: 15%;
 }
-.navbar-brand img{
-    width: 100%;
+.side-logo{
+    width:20%;
 }
 .caption{
     display: block;
@@ -34,6 +132,7 @@ a.nav-link:active {
     font-family: quantico;
     font-style: normal;
 }
+
 .get{
     background-color: #BD3193;
     font-family: poppins;
@@ -45,6 +144,10 @@ a.nav-link:active {
     height: 15px;
     flex-shrink: 0;
 }
+.sidebar{
+    background-color: rgb(19, 8, 40);
+    backdrop-filter: blur(10px);
+}
 /* nav bar ends */
 
 h1{    
@@ -54,9 +157,7 @@ h1{
     font-weight: 900;
 }
 
-/* navigation bar starts*/
 
-/* navigation bar ends*/
 
 .text-purple{
     color:#BD3193;
@@ -97,29 +198,74 @@ header{
     width: 100%;
 }
 
+/* future games section starts */
+
+.future_games_images{
+    width:60%;
+    margin:50px 0px
+}
+.future_games_text{
+    width:40%;
+    margin:50px 0px;
+    margin-left: 150px;
+}
+.future_games_images{
+    display: flex;
+    margin-left: 50px;
+}
+.flamingdisc1{
+height: 50px;
+transform: translate(10px, -120px);
+}
+
+.flamingdisc2{
+    height: 50px;
+    transform: translate(-10px, 890%);
+}
+.headphones, .havefun{
+    width: 45%;
+    position: relative;
+    flex-shrink: 0;
+}
+.headphones{
+margin-right: 20px;
+transform: translate(0, -90px);
+}
+.havefun{
+    margin-left: 20px;
+    transform: translate(0, 90px);
+}
+.headphonesimg, .havefunimg{
+    width: 100%;
+}
+.play,  .have{
+    position: absolute;
+    color: white;
+    background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
+    font-size: 13px;
+      top: 90%;
+      left: 50%;
+      transform: translate(-60%, -50%);
+}
+
+/* future games section ends */
 
 	/*start of features css*/
 	.features{
-		/*border: 3px solid green;*/
 		float: left;
-		width: 1350px;
-		height: 800px; 
-		display: inline-flex;
+		width: 100%;
+		display: flex;
 		align-items: center;
 		justify-content: center;
 		background-color: #130828; 
 	}
-	.parent{
-		/*border: 1px solid yellow;*/
-		height: 700px;
-		width: 1100px;
-	}
+
+    
 	.d2{
-		/*border: 1px solid white;*/
-		height: 300px;
 		float: left;
-		width: 500px;
-		margin-right: 75px;
+		width: 45%;
+        margin-right: 60px;
+        margin-top: 20px;
 		display: inline-flex;
 		flex-direction: column;
 		align-items: flex-start;
@@ -127,6 +273,16 @@ header{
 		
 	}
 
+    .info-box{
+    height: 100%;
+    width: 24%;
+    margin-right: 10px;
+    background-color: #BD3193;
+    border-radius: 4px;
+    }
+    .d4 .info-box{
+        width:55%;
+    }
 	.featureswe{
     	/*border: 1px solid blue;*/
     	height: 27px;
@@ -145,7 +301,6 @@ header{
     .why{
     	/*border: 1px solid pink;*/
     	display: flex;
-		width: 500px;
 		height: 110px;
 		flex-direction: column;
 		justify-content: center; 
@@ -169,11 +324,7 @@ header{
 		font-weight: 700;
 		line-height: normal; 
     }
-    .competeagainst{
-    	/*border: 1px solid yellow;*/
-    	width: 500px;
-    	height: 100px;
-    }
+
     .competeagainsttext{
     	color: rgba(255, 255, 255, 0.70); 
 		font-family: Poppins;
@@ -182,39 +333,24 @@ header{
 		font-weight: 300;
 		line-height: normal; 
     }
-	.d3{
-		/*border: 1px solid white;*/
-		height: 440px;
-		float: left;
-		width: 503px;
-		margin-right: 20px;
-	}
+    .d3 {
+        float: left;
+        width: 48%;
+        margin-bottom:50px;
+    }
 	.black2{
 		height: 100%;
 		width: 100%;
 	}
 	.d4{
-		/*border: 1px solid white;*/
-		height: 140px;
-		width: 540px;
-		float: left;
-		margin-right: 20px;
-		position: relative;
-		bottom: 140px;
+        height: 140px;
+        width: 110%;
+        display: flex;
 	}
-	.diversegames{
-		/*border: 1px solid yellow;*/
-		height: 100%;
-		width: 45%;
-		float: left;
-		border-radius: 4px;
-		background-color: #BD3193;
-		align-items: center;
-		justify-content: center;
-		margin-right: 40px;
-	}
-	.diversegamestext{
-		/*border: 1px solid white;*/
+    .d4 .info-box{
+        width:48%;
+    }
+	.info-box-tex{
 		height: 40px;
 		width: 100%;
 		font-family: quantico;
@@ -232,140 +368,22 @@ header{
 		float: left;
 		text-align: center;
 	}
-	.ellipses{
-		Width: 59px;
-		Height: 30px;
-		position: absolute;
-		Top: 109px;
-		Left: 180px;
-		Rotation: 180°;
-	}
-	.celebrityplay{
-		/*border: 1px solid yellow;*/
-		height: 100%;
-		width: 45%;
-		float: left;
-		border-radius: 4px;
-		background-color: #BD3193;
-	}
-	.celebrityplaytext{
-		/*border: 1px solid white;*/
-		height: 40px;
-		width: 100%;
-		font-family: quantico;
-		color: #FFFFFF;
-		float: left;
-		text-align: center;
-	}
 	.ellipse{
-		Width: 59px;
-		Height: 30px;
-		position: absolute;
-		Top: 109px;
-		Left: 465px;
-		Rotation: 180°;
+        Width: 59px;
+        transform: rotate(0deg);
+        float: right;
 	}
+
+
+
+
 	.d5{
 		/*border: 1px solid white;*/
-		height: 140px;
-		float: left;
-		width: 1100px;
-		position: relative;
-		bottom: 90px;
-		margin-right: 20px;
-	}
-	.communityspirit{
-		/*border: 1px solid yellow;*/
-		height: 100%;
-		width: 24%;
-		margin-right: 10px;
-		background-color: #BD3193;
-		border-radius: 4px;
-		float: left;
-
-	}
-	.communityspirittext{
-		/*border: 1px solid white;*/
-		height: 40px;
 		width: 100%;
-		font-family: quantico;
-		color: #FFFFFF;
-		float: left;
-		text-align: center;
+        display: flex;
+        flex-wrap: wrap;
 	}
-	.techadvanced{
-		/*border: 1px solid yellow;*/
-		height: 100%;
-		width: 24%;
-		margin-right: 10px;
-		background-color: #BD3193;
-		border-radius: 4px;
-		float: left;
 
-	}
-	.techadvancedtext{
-		/*border: 1px solid white;*/
-		height: 40px;
-		width: 100%;
-		font-family: quantico;
-		color: #FFFFFF;
-		float: left;
-		text-align: center;
-	}
-	.rewardingwins{
-		/*border: 1px solid yellow;*/
-		height: 100%;
-		width: 24%;
-		margin-right: 10px;
-		background-color: #BD3193;
-		border-radius: 4px;
-		float: left;
-
-	}
-	.rewardingwinstext{
-		/*border: 1px solid white;*/
-		height: 40px;
-		width: 100%;
-		font-family: quantico;
-		color: #FFFFFF;
-		float: left;
-		text-align: center;
-	}
-	.ellipses2{
-		Width: 59px;
-		Height: 30px;
-		position: absolute;
-		Top: 109px;
-		Left: 745px;
-		/*Rotation: 180°;*/
-	}
-	.exclusiveevents{
-		/*border: 1px solid yellow;*/
-		height: 100%;
-		width: 24%;
-		margin-right: 10px;
-		background-color: #BD3193;
-		border-radius: 4px;
-		float: left;
-
-	}
-	.exclusiveeventstext{
-		/*border: 1px solid white;*/
-		height: 40px;
-		width: 100%;
-		font-family: quantico;
-		color: #FFFFFF;
-		float: left;
-		text-align: center;
-	}
-	.ellipses3{
-		Width: 59px;
-		Height: 30px;
-		position: absolute;
-		Top: 109px;
-		Left: 1020px;
-		/*Rotation: 180°;*/
-	}
 	/*end of features div*/
 
 #team .container img{
@@ -390,88 +408,14 @@ header{
     flex-direction: row;
     gap: 30px;
 }
-.bgimg{
-    /*border: 1px solid black;*/
-    height: 600px;
-    width: 50%;
-    display: grid;
-      grid-template-columns: repeat(8, 1fr);
-      grid-template-rows: repeat(8, 1fr);
-      grid-column-gap: 0px;
-      grid-row-gap: 0px;
-}
-    
-.flamingdisc1{
-    height: 100px;
-    width: 80px;
-    grid-area: 1 / 1 / 3 / 3;
-    display: flex;
-      justify-content: center;
-      align-items: center;
 
-}
-.headphones{
-    /*border: 1px solid black;*/
-    height: 300px;
-    width: 200px;
-    position: relative;
-    flex-shrink: 0;
-    grid-area:  2/ 2 / 4 / 4;
-}
-.headphonesimg{
-    width: 100%;
-    height: 100%;
-}
-.play{
-    position: absolute;
-    color: white;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    display: inherit;
-    font-family: Poppins;
-    font-size: 13px;
-      top: 90%;
-      left: 50%;
-      transform: translate(-60%, -50%);
-}
-.havefun{
-    /*border: 1px solid black;*/
-    height: 300px;
-    width: 200px;
-    flex-shrink: 0;
-    position: relative;
-    grid-area: 3 / 6 / 6 / 6;
-}
-.havefunimg{
-    width: 100%;
-    height: 100%;
-}
- .have{
-    position: absolute;
-    color: white;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    display: inherit;
-    font-family: Poppins;
-    font-size: 13px;
-      top: 90%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-}
+
+
  
-.flamingdisc2{
-    height: 100px;
-    width: 80px;
-    grid-area: 7 / 7 / 8 / 8;
-    
 
-}
+
 .details{
-    /*border: 1px solid black;*/
-    height: 400px;
-    width: 40%;
+    width: 100%;
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
@@ -493,9 +437,7 @@ header{
 
 }
 .unveiling{
-    /*border: 1px solid pink;*/
     display: flex;
-    width: 600px;
     height: 110px;
     flex-direction: column;
     justify-content: center; 
@@ -521,8 +463,7 @@ header{
 }
 .SkyboardGames{
     /*border: 1px solid black;*/
-    width: 500px;
-    height: 100px;
+    width: 100%;
 }
 .SkyboardGamestext{
     color: rgba(0, 0, 0, 0.70); 
@@ -732,6 +673,7 @@ background: rgba(255, 255, 255, 0.20);
 .contact input{
     background: rgba(255, 255, 255, 0);
     border: 0;
+    width: 80%;
 }
 
 .subcribe-btn button{
@@ -774,15 +716,25 @@ font-size: 10px;
 }
 /* footer ends */
 
-@media (max-width: 900px){
-    .sidebar{
-        background-color: rgb(19, 8, 40);
-        backdrop-filter: blur(10px);
-    }
+@media (max-width: 991px){
     .navbar-brand{
-        width: 15%;
+        width: 25%;
     }
-
+    .logo{
+        width: 40%;
+    }
+.sidebar{
+    background-color: rgb(19, 8, 40);
+    backdrop-filter: blur(10px);
+}
+.d3 {
+    float: left;
+    width: 96%;
+    margin: auto;
+}
+.d4 {
+    width: 96%;
+    margin: 10px 0;}
     .row{
         flex-direction: column;
     }
@@ -796,11 +748,37 @@ font-size: 10px;
         display:flex;
         flex-direction: column;
     }
+
+    .flamingdisc2 , .flamingdisc1{
+        display: none;
+    }
+    .future_games{
+    flex-direction: column-reverse;
+}
+    .future_games_images{
+        width:100%;
+        margin: 100px 10px;
+    }
+    .headphones, .havefun{
+        margin: 5px;
+    }
+    .future_games_text{
+        width:100%;
+        margin: 10px 0;
+    }
+
+    .info-box {
+        width: 47%;
+        margin: 5px;
+    }.d2 {
+        float: left;
+        width: 100%;
+    }
     footer .row{
         flex-direction: row;
     }
     footer .row .col{
-        width: 45%;
+        width: 100%;
     }
     footer .row .col:first-child{
         margin-left: 10%;
@@ -813,20 +791,41 @@ font-size: 10px;
     }
 }
 @media (max-width:700px) {
+
+    h1, h3,  .unveilingtext, .whytext{
+        font-size: 30px;
+    }
+   
+    .navbar-brand{
+        width: 25%;
+    }
+    .logo{
+        width: 80%;
+        }
+
+.sidebar{
+    background-color: rgb(19, 8, 40);
+    backdrop-filter: blur(10px);
+}
+
     footer .row{
         flex-direction:column-reverse;
         align-items: center;
         text-align: center;
-        font-size:24px
+        font-size:24px;
+        width: 80%;
     }
     .box-wrap{
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding-bottom: 20px;
+        flex-direction: row-reverse;
     }
     
     .box-wrap p{
-        text-align: right;
+            text-align: left;
+            font-size: 10px;
+            font-weight: 300;
     }
 }
