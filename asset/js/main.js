@@ -17,3 +17,33 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 // faq end
+
+// account starts
+document.addEventListener('DOMContentLoaded', function() {
+  const sections = document.querySelectorAll('.users');
+  const buttonContainer = document.querySelector('.btn-container a');
+
+  sections.forEach(section => {
+      section.addEventListener('click', function() {
+          const button = section.querySelector('button');
+          const pinkButton = document.querySelector('.pink');
+          const greenButton = document.querySelector('.green');
+
+          if (button.classList.contains('pink')) {
+              pinkButton.classList.add('pinkBtn');
+              greenButton.classList.remove('greenBtn');
+              buttonContainer.classList.remove('greenBtn'); // Remove green class
+              buttonContainer.classList.add('pinkBtn'); // Add pink class
+              buttonContainer.style.display = 'block'; // Show the button
+          } else {
+              greenButton.classList.add('greenBtn');
+              pinkButton.classList.remove('pinkBtn');
+              buttonContainer.classList.remove('pinkBtn'); // Remove pink class
+              buttonContainer.classList.add('greenBtn'); // Add green class
+              buttonContainer.style.display = 'block'; // Show the button
+          }
+      });
+  });
+});
+
+// account ends
