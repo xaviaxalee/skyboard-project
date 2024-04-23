@@ -1,4 +1,19 @@
-// nav starts
+// popup starts
+document.addEventListener('DOMContentLoaded', function() {
+  var openPopupBtn = document.getElementById('openPopupBtn');
+  var closePopupBtn = document.getElementById('closePopupBtn');
+  var popupForm = document.getElementById('popupForm');
+
+  openPopupBtn.addEventListener('click', function() {
+    popupForm.style.display = 'block';
+  });
+
+  closePopupBtn.addEventListener('click', function() {
+    popupForm.style.display = 'none';
+  });
+});
+
+// popup ends
 
 
 // faq starts

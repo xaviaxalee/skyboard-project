@@ -95,7 +95,7 @@
               align-items: center;
               justify-content: center;
               width: 100%;
-              padding-right: 40px;
+              margin-left: 80px;
             }
             .parent1{
                width: 40%;
@@ -953,36 +953,7 @@ footer .row .col:last-child {
     width: 100%;
     height: auto;
 }
-}
-     
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            @media all  and (max-width: 991px){
     .navbar-brand{
         width: 25%;
     }
@@ -995,202 +966,195 @@ footer .row .col:last-child {
     backdrop-filter: blur(10px);
 }
 
+     .featuredtext{
+         font-size: 25px;
+     }
+     .gaming{
+         font-size: 25px;
+     }
+     .unique{
+         height: 290px;
+     }
+     .uniquetext{
+         font-size: 11px;
+     }
+     .games{
+         width: 100%;
+         height: 60%;
+     }
+     .celebritytext{
+         font-size: 35px;
+     }
+     .spotlights{
+         font-size: 35px;
+     }
+     .bggg{
+          height: 400px;
+         width: 100%;
+     }
+     .d1{
+         margin: 10px;
+     }
+     .d2{
+         margin: 10px;
+     }
+     .celebrityspotlights{
+         height: 450px;
+     }
+     .babysteps{
+     height: 800px;
+     width: 100%;
+     }
+     .numberBg{
+     width: 80%;
+     height: 80%;
+     flex-shrink: 0;
+     }
+     .no1{
+     position: absolute;
+     color: white;
+     top: 40%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     }
+     .signup{
+         font-size: 15px;
+     }
+     .visit br{
+         display: none;
+     }
+     .once br{
+         display: none;
+     }
+     .compete2 br{
+         display: none;
+         font-size: 8px;
+     }
+      .tutorials{
+         height: 100px;
+      }
+     .guides{
+         width: 80%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+     .chesstextbg br{
+         display: none;
+     }
+      
+     .chesstextsm{
+         height: 25%;
+     }
+     .snookertextsm{
+         height: 25%;
+     }
+     .ludotextsm{
+         height: 25%;
+     }
+     .upcomingbg{
+         height: 1300px;
+     }
+      .events{
+         display: flex;
+        flex-wrap: wrap;
+         width: 90%;
+         height: 70%;
+         justify-content: center;
+        
+     }
+     .game{
+        
+         height: 20%;
+         width: 40%;
+         margin-bottom: 0px;
+         margin: 15px;
+         
+     }
+     .gambit{
+       
+         height: 20%;
+         width: 40%;
+         margin-bottom: -0px;
+         margin: 15px;
+        
+     }
+     .solitaire{
+        
+         height: 20%;
+         width: 40%;
+         margin-bottom: 0px;
+         margin: 15px;
+        
+     }
+     .blurimg{
+         width: 100%;
+         height: 25%;
+         position: absolute;
+         top: 133px;
+         
+     }
+     .moreinfo{
+         position: relative;
+         top: 155px;
+         left: 90px
+     } 
+     
+ }
+            
 
 
-            .featuredtext{
-                font-size: 25px;
-            }
-            .gaming{
-                font-size: 25px;
-            }
-            .unique{
-                height: 290px;
-            }
-            .uniquetext{
-                font-size: 11px;
-            }
 
-            .games{
-                width: 100%;
-                height: 60%;
-            }
-            .celebritytext{
-                font-size: 35px;
-            }
-            .spotlights{
-                font-size: 35px;
-            }
-            .bggg{
-                 height: 400px;
-                width: 100%;
-            }
-            .d1{
-                margin: 10px;
-            }
-            .d2{
-                margin: 10px;
-            }
-            .celebrityspotlights{
-                height: 450px;
-            }
-            .babysteps{
-            height: 800px;
+     @media all  and (max-width: 700px){
+        .item1 {
             width: 100%;
-            }
-            .numberBg{
-            width: 80%;
-            height: 80%;
-            flex-shrink: 0;
-            }
-            .no1{
-            position: absolute;
-            color: white;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            }
-            .signup{
-                font-size: 15px;
-            }
-            .visit br{
-                display: none;
-            }
-            .once br{
-                display: none;
-            }
-            .compete2 br{
-                display: none;
-                font-size: 8px;
-            }
-
-             .tutorials{
-                height: 100px;
-             }
-
-            .guides{
-                width: 80%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            .chesstextbg br{
-                display: none;
-            }
-             
-            .chesstextsm{
-                height: 25%;
-            }
-            .snookertextsm{
-                height: 25%;
-            }
-            .ludotextsm{
-                height: 25%;
-            }
-            .upcomingbg{
-                height: 1300px;
-            }
-             .events{
-                display: flex;
-               flex-wrap: wrap;
-                width: 90%;
-                height: 70%;
-                justify-content: center;
-               
-            }
-            .game{
-               
-                height: 20%;
-                width: 40%;
-                margin-bottom: 0px;
-                margin: 15px;
-                
-            }
-            .gambit{
-              
-                height: 20%;
-                width: 40%;
-                margin-bottom: -0px;
-                margin: 15px;
-               
-            }
-            .solitaire{
-               
-                height: 20%;
-                width: 40%;
-                margin-bottom: 0px;
-                margin: 15px;
-               
-            }
-            .blurimg{
-                width: 100%;
-                height: 25%;
-                position: absolute;
-                top: 133px;
-                
-            }
-            .moreinfo{
-                position: relative;
-                top: 155px;
-                left: 90px;
-
-            } 
-            
+            flex-direction:column;
+            margin: 0;
         }
-            
-
-
-
-         @media all  and (max-width: 700px){
-            .item1 {
-                width: 100%;
-                flex-direction:column;
-            }
-            .parent2{
-                display: none;
-            }
-            .d1{
-                margin: 5px;
-            }
-            .d2{
-                margin: 5px;
-            }
-            .bgsignup{
-                height: 200px;
-            }
-            .colorBg{
-                height: 200px;
-            }
-            .signup{
-                font-size: 10px;
-            }
-            .number1{
-                height: 200px;
-            }
-            .number2{
-                height: 200px;
-            }
-            .number3{
-                height: 200px;
-            }
-            .number4{
-                height: 200px;
-            }
-            .amico{
-                height: 200px;
-            }
-            .competition{
-                height: 200px;
-            }
-            .winners{
-                height: 200px;
-            }
-
-              .moreinfo{
-                position: relative;
-                top: 155px;
-                left: 60px;
-
-            } 
+        .parent2{
+            display: none;
+        }
+        .d1{
+            margin: 5px;
+        }
+        .d2{
+            margin: 5px;
+        }
+        .bgsignup{
+            height: 200px;
+        }
+        .colorBg{
+            height: 200px;
+        }
+        .signup{
+            font-size: 10px;
+        }
+        .number1{
+            height: 200px;
+        }
+        .number2{
+            height: 200px;
+        }
+        .number3{
+            height: 200px;
+        }
+        .number4{
+            height: 200px;
+        }
+        .amico{
+            height: 200px;
+        }
+        .competition{
+            height: 200px;
+        }
+        .winners{
+            height: 200px;
+        }
+          .moreinfo{
+            position: relative;
+            top: 155px;
+            left: 60px;
+        } 
 
             .images\/crown,  .images\/crown1, .images\/crown2,  .images\/crown3{
             width:10%;

@@ -9,6 +9,66 @@
                 background-image: url(../images/Bg.png);
             }
         
+ /* popup form  starts*/
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .popup-content {
+    background-color: #331235;
+    margin: 50% auto;
+    padding: 20px;
+    border: 1px solid #b628bf;
+    width: 80%;
+  }
+  
+  .close {
+    color: #9FCB3A;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: wheat;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.contact-form button {
+    width: 100%;
+    background-color: #BD3193;
+    padding: 2px 0;
+    font-size: 16px;
+    border: none;
+    color: #FFF;
+    margin-bottom: 20px;
+}
+.input {
+    display: inline-flex;
+    padding: 5px;
+    gap: 10px;
+    border: 1px solid #BD3193;
+    background: rgba(255, 255, 255, 0.20);
+    width: 100%;
+    font-size: 16px;
+    margin: px 0;
+}
+.input input{
+    background: rgba(255, 255, 255, 0);
+    border: 0;
+    width: 100%;
+}
+/* popup form  starts*/
             
 /* nav bar start */
             .navbar-nav{
@@ -58,7 +118,7 @@
               display: flex;
               flex-wrap: wrap;
               font-size: 30px;
-              height: 600px;
+              height: 100vh;
               text-align: center;
             }
 
