@@ -215,112 +215,28 @@
 				<!-- start of testimonials -->
 
 				
-    <div class="clients">
-        <h3>Clients <span class="feedback">Feedback</span></h3>
+    <div class="dropdown">
+    <button onclick="toggleDropdown()" class="dropbtn">Dropdown</button>
+    <div id="myDropdown" class="dropdown-content">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
     </div>
-    <div class="imageSlider-container">
-        <div class="imageSlider-content" id="imageSlider-content">
-            <div class="imageSlider-item">				
-                <div class="testimonialsbg">
-                <div class="testimonials ">
-                    <div class="testi-content ">
-                        <div class="testi-box ">
-                            <div class="quote">
-                                <img src="asset/imagesraphael_quote.svg">
-                            </div>
-                            <div class="testi-text">
-                                <p>Compete and climb the leaderboard to win  rewards. Rewards vary from in-game items, cash  prizes, to exclusive experiences. Your winnings are  directly added to your account, where you can  withdraw or use them for future competitions.</p>
-                            </div>
-                        </div>
+</div>
 
-                        <div class="testi-image">
-                            <div class="testi2">
-                                <img src="asset/imagestestimonial.png" class="testimonial-img">
-                            </div>
+<button onclick="toggleCollapsed()" class="collapsed-btn">Toggle</button>
 
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            </div> <!-- Duplicate of Slide 1 for seamless effect -->
-            <div class="imageSlider-item">				
-                <div class="testimonialsbg">
-                <div class="testimonials ">
-                    <div class="testi-content ">
-                        <div class="testi-box ">
-                            <div class="quote">
-                                <img src="raphael_quote.svg">
-                            </div>
-                            <div class="testi-text">
-                                <p>Compete and climb the leaderboard to win  rewards. Rewards vary from in-game items, cash  prizes, to exclusive experiences. Your winnings are  directly added to your account, where you can  withdraw or use them for future competitions.</p>
-                            </div>
-                        </div>
-
-
-
-                        <div class="testi-image">
-                            <div class="testi2">
-                                <img src="testimonial.png" class="testimonial-img">
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            </div> <!-- Duplicate of Slide 1 for seamless effect -->
-            <div class="imageSlider-item">				
-                <div class="testimonialsbg">
-                <div class="testimonials ">
-                    <div class="testi-content ">
-                        <div class="testi-box ">
-                            <div class="quote">
-                                <img src="raphael_quote.svg">
-                            </div>
-                            <div class="testi-text">
-                                <p>Compete and climb the leaderboard to win  rewards. Rewards vary from in-game items, cash  prizes, to exclusive experiences. Your winnings are  directly added to your account, where you can  withdraw or use them for future competitions.</p>
-                            </div>
-                        </div>
-
-
-
-                        <div class="testi-image">
-                            <div class="testi2">
-                                <img src="testimonial.png" class="testimonial-img">
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            </div> <!-- Duplicate of Slide 1 for seamless effect -->
-            <div class="imageSlider-item">				
-                <div class="testimonialsbg">
-                <div class="testimonials ">
-                    <div class="testi-content ">
-                        <div class="testi-box ">
-                            <div class="quote">
-                                <img src="raphael_quote.svg">
-                            </div>
-                            <div class="testi-text">
-                                <p>Compete and climb the leaderboard to win  rewards. Rewards vary from in-game items, cash  prizes, to exclusive experiences. Your winnings are  directly added to your account, where you can  withdraw or use them for future competitions.</p>
-                            </div>
-                        </div>
-
-
-
-                        <div class="testi-image">
-                            <div class="testi2">
-                                <img src="testimonial.png" class="testimonial-img">
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
+<div class="faq">
+    <h2>FAQ</h2>
+    <div class="question">
+        <h3 onclick="toggleAnswer()">Question 1</h3>
+        <p id="answer1" style="display: none;">Answer 1</p>
+    </div>
+    <div class="question">
+        <h3 onclick="toggleAnswer()">Question 2</h3>
+        <p id="answer2" style="display: none;">Answer 2</p>
+    </div>
+</div>
             </div> <!-- Duplicate of Slide 1 for seamless effect -->
         </div>
         <button class="imageSlider-button left-button" onclick="moveimageSlider(-1)">&#9664;</button>
