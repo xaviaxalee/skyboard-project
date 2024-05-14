@@ -62,3 +62,38 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // account ends
+
+	//testimonials starts
+
+        let currentSlide = 0;
+        const imageSliderContent = document.getElementById('imageSlider-content');
+        const totalSlides = imageSliderContent.children.length - 1; // Adjust for the duplicate slide
+        let isTransitioning = false;
+
+        function moveimageSlider(direction) {
+            if (isTransitioning) return;
+            isTransitioning = true;
+
+            currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+
+            const offset = -currentSlide * 100;
+            imageSliderContent.style.transition = 'transform 0.5s ease-in-out';
+            imageSliderContent.style.transform = `translateX(${offset}%)`;
+
+            setTimeout(() => {
+                if (currentSlide === totalSlides - 1 && direction === 1) {
+                    imageSliderContent.style.transition = 'none';
+                    currentSlide = 0;
+                    imageSliderContent.style.transform = `translateX(0%)`;
+                }
+                isTransitioning = false;
+            }, 500);
+        }
+
+        function autoSlide() {
+            moveimageSlider(1);
+            setTimeout(autoSlide, 6000); // Call autoSlide again after 4 seconds
+        }
+
+        setTimeout(autoSlide, 4000); // Initial delay of 4 seconds
+	//testimonials ends
