@@ -8,6 +8,23 @@
 
 
 	/*start of testimonials*/
+	.clients{
+		/*border: 1px solid black;*/
+		height: 90px;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		font-family: quantico;
+		font-weight: 700;
+		font-size: 30px;
+	}
+	.feedback{
+		color: #BD3193;
+		font-family: quantico;
+		font-weight: 700;
+		font-size: 35px;
+	}
 	
         .imageSlider-container {
             position: relative;
