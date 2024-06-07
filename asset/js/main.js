@@ -1,8 +1,13 @@
 // popup starts
 document.addEventListener("DOMContentLoaded", function () {
   var openPopupBtn = document.getElementById("openPopupBtn");
+  var openPopUpBtn1 = document.getElementById("openPopupBtn1");
   var closePopupBtn = document.getElementById("closePopupBtn");
   var popupForm = document.getElementById("popupForm");
+
+  openPopUpBtn1.addEventListener("click", function () {
+    popupForm.style.display = "block";
+  });
 
   openPopupBtn.addEventListener("click", function () {
     popupForm.style.display = "block";
@@ -26,42 +31,30 @@ waitListForm.addEventListener("submit", async (e) => {
   const details = {
     email: waitEmail.value,
   };
-  console.log(details);
-  // try {
-  //   const response = await fetch(`${apiUrl}/waitlist`, {
-  //     method: "POST",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //       Accept: "application/json",
-  //     },
-  //     body: details,
-  //   });
 
-  //   console.log(response);
-
-  //   if (!response.ok) {
-  //     console.error("Network" + response.statusText);
-  //     throw new Error("Network Issues");
-  //   }
-
-  //   const data = await response.json();
-
-  //   console.log("Success: ", response);
-  // } catch (error) {
-  //   console.error(error);
-  // }
   try {
     const result = await axios.post(`${apiUrl}/waitlist`, details, {
       headers: {
         "Access-Control-Allow-Origin": "*",
       },
     });
-    console.log(result);
+
     const data = result.data;
+
+    alert("You have been successfully added to the Waiting List ", waitName);
 
     return data;
   } catch (error) {
+    if (error.response.data) {
+      alert("You are already on the waiting list");
+    } else {
+      alert("There has been an error");
+    }
+
     console.error(error);
+  } finally {
+    var popupForm = document.getElementById("popupForm");
+    popupForm.style.display = "none";
   }
 });
 
