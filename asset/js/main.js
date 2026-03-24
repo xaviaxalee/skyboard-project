@@ -40,11 +40,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
   userDashboardRoute.addEventListener('click', () => {
-    window.location.href = "https://benny506.github.io/skyboard/#/register"
+    window.location.href = "../../user_dashboard/public/index.html"
   })
 
   celebDashboardRoute.addEventListener('click', () => {
-    window.location.href = "https://benny506.github.io/skyboard_celeb/#/register"
+    window.location.href = "../../celeb_dashboard/public/index.html"
   })
 
 
